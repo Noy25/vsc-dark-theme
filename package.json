@@ -1,0 +1,22 @@
+{
+    "name": "theme-noys-dark",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "1.0.0",
+    "publisher": "Noy Morgenshtein",
+    "license": "MIT",
+    "engines": {
+        "vscode": "*"
+    },
+    "categories": ["Themes"],
+    "contributes": {
+        "themes": [
+            {
+                "id": "Noys Dark",
+                "label": "Noys Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/noys_dark.json"
+            }
+        ]
+    }
+}

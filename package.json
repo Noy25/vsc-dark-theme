@@ -16,8 +16,8 @@
     "contributes": {
         "themes": [
             {
-                "id": "Noys Dark",
-                "label": "Noys Dark",
+                "id": "Noy's Dark Theme",
+                "label": "Noy's Dark Theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/noys_dark.json"
             }

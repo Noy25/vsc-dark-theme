@@ -2,7 +2,7 @@
     "name": "theme-noys-dark",
     "displayName": "%displayName%",
     "description": "%description%",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "NoyMorgenshtein",
     "license": "MIT",
     "repository": {
@@ -12,7 +12,18 @@
     "engines": {
         "vscode": "*"
     },
-    "categories": ["Themes"],
+    "scripts": {
+        "login": "open 'https://dev.azure.com/noy9630/_usersSettings/tokens' && vsce login NoyMorgenshtein",
+        "package": "vsce package",
+        "publish": "vsce publish",
+        "deploy": "npm run package && npm run publish",
+        "release": "npm run login && npm version patch --no-git-tag-version && npm run deploy",
+        "release:minor": "npm run login && npm version minor --no-git-tag-version && npm run deploy",
+        "release:major": "npm run login && npm version major --no-git-tag-version && npm run deploy"
+    },
+    "categories": [
+        "Themes"
+    ],
     "contributes": {
         "themes": [
             {

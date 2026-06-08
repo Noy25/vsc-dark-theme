@@ -41,6 +41,9 @@
 		// "editorGroupHeader.tabsBorder": "#0d3a58",
 		// *** Tabs ***
 		"tab.inactiveBackground": "#193549",
+		// *** Links (e.g. JSDoc @link in hover popups) ***
+		"textLink.foreground": "#4FC1FF",
+		"textLink.activeForeground": "#82d4ff",
 	},
 	"tokenColors": [
 		{
